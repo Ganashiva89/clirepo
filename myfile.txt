@@ -1,2 +1,3 @@
 nd line added
-my new file 
+my new file
+my third line 
