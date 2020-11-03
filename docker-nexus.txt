@@ -1,0 +1,11 @@
+docker run --name Mynexus --detach \
+--volume nexus-data:/nexus-data \
+--publish 8081:8081 sonatype/nexus3
+
+
+
+
+docker run --name Mysonarqube --detach \
+--env SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true \
+--volume sonar-data:/sonar-data \
+--publish 9000:9000 sonarqube:latest
